@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Report | Calculator</title>
+
+
+
+
+    <link rel="stylesheet" href="main.css">
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <header class="site-header">
+
+        <div class="wrapper">
+
+            <span class="site-title">
+      
+    </span>
+
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="post">
+
+                <header class="post-header">
+                    <h1 class="post-title"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Report:Programming Widget Layout
+
+                    </h1>
+                    <h2 class="post-description"><u>Table of contents</u> </h2>
+                </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <article class="post-content Programming Widget Layout clearfix">
+                    <ul id="markdown-toc">
+                        <li>
+                            <a href="#introduction" id="markdown-toc-introduction">
+                                <p style="color:red"><u>Introduction</u> </span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experimenting-calculator" id="markdown-toc-calculator">
+                                <p style="color:red"><u>Calculator</u></p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#traffic-light" id="markdown-toc-traffic-light">
+                                <p style="color:red"><u>Traffic Light</u> </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#digital-clock" id="markdown-toc-digital-clock>
+                                <p style=" color:red "><u>digital-clock</u> </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#conclusion " id="markdown-toc-conclusion ">
+                                <p style="color:rgb(5, 255, 46) "><u>Conclusion</u></p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <h1 id="introduction ">
+                            <u>Introduction</u></p>
+                        </h1>
+
+
+
+                        <p>
+                            As you know, a window can contain all kinds of widgets: buttons, text fields, check boxes , combox , DialogButtonBox ,GridLayout ... and with layouts we can automatically arrange child widgets within their container. In this practical course we will program
+                            with Widget Layout.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h1 id="experimenting-Calculator "><u>Calculator</u></h1>
+
+
+                        <p>Let us start with a <code class="language-plaintext highlighter-black ">QHBoxLayout</code> ,in this example we will show a line edit (name) with a search button:</p>
+
+
+
+
+
+
+
+
+                        <p><code class="language-plaintext highlighter-black ">hbox.h</code> with the following code:</p>
+
+
+                        
+
+
+
+                            <p>It will display the following form:
+                            </p>
+
+                            <div class="center ">
+                                <img src="./image/qhbox.PNG " />
+                                <div class="figcaption ">
+                                    QHBoxLayout output
+
+                                </div>
+                            </div>
+
+
+
+
+                            <blockquote>
+                                <p>In the
+                                    <a href="https://github.com/amalfati/QhboxLayout-test.git "><strong>hbox</strong></a>, you will find the zip of this exercise.
+                                </p>
+
+                            </blockquote>
+
+
+
+
+
+                            <h1 id="nested-layouts "><u>Nested Layouts</u></h1>
+
+                            <p>In this task we will arrange components in a set of nested layouts, using the
+                                <code class="language-plaintext highlighter-black ">QHBoxLayout</code> and
+                                <code class="language-plaintext highlighter-black ">QVBoxLayout</code> objects
+                                <strong></strong>.</p>
+
+
+
+                            <p>
+                                <code class="language-plaintext highlighter-black ">nestedlayout.h</code> with the following code:
+                            </p>
+
+
+
+
+
+
+
+                            <pre style="color:#d1d1d1;background:#000000; ">
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">ifndef</span><span style="color:#008073; "> NESTEDLAYOUT_H</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">define</span><span style="color:#008073; "> NESTEDLAYOUT_H</span>
+                            
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QWidget</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QHBoxLayout</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QVBoxLayout</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QLabel</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QPushButton</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QCheckBox</span><span style="color:#02d045; ">&gt;</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QLineEdit</span><span style="color:#02d045; ">&gt;</span>
+                            
+                 <span style="color:#e66170; font-weight:bold; ">class</span> nestedlayout <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">public</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span>
+                 <span style="color:#b060b0; ">{</span>
+                                <span style="color:#008073; ">Q_OBJECT</span>
+    <span style="color:#e34adc; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#e66170; font-weight:bold;
+                                ">public</span><span style="color:#e34adc; ">:</span>
+                                <span style="color:#e66170; font-weight:bold; ">explicit</span> nestedlayout<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86;
+                                ">*</span>parent <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">nullptr</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">virtual</span> <span style="color:#d2cd86; ">~</span> nestedlayout<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#e34adc; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#e66170; font-weight:bold;
+                                ">protected</span><span style="color:#e34adc; ">:</span>
+                                <span style="color:#e66170; font-weight:bold; ">void</span> createWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">void</span> placeWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">void</span> makeConnexions<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#e34adc; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#e66170; font-weight:bold;
+                                ">protected</span><span style="color:#e34adc; ">:</span>
+                                <span style="color:#e66170; font-weight:bold; ">QLabel</span> <span style="color:#d2cd86; ">*</span>nameLabel<span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>nameEdit<span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">QCheckBox</span> <span style="color:#d2cd86; ">*</span>match<span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">QCheckBox</span> <span style="color:#d2cd86; ">*</span>backward<span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">QPushButton</span> <span style="color:#d2cd86; ">*</span><span style="color:#e66170; font-weight:bold; ">search</span><span style="color:#b060b0; ">;</span>
+                                <span style="color:#e66170; font-weight:bold; ">QPushButton</span> <span style="color:#d2cd86; ">*</span>close<span style="color:#b060b0; ">;</span>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span style="color:#b060b0; ">}</span><span style="color:#b060b0; ">;</span>
+                            
+    <span style="color:#008073; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#008073; ">#</span><span style="color:#008073; ">endif</span>
+                            
+    </pre>
+
+
+                            <p>
+                                <code class="language-plaintext highlighter-black ">nestedlayout.cpp</code> with the following code:
+                            </p>
+
+
+
+
+
+
+                            <pre style="color:#d1d1d1;background:#000000; ">
+            <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">"</span><span style="color:#40015a; ">nestedlayout.h</span><span style="color:#02d045; ">"</span>
+                            <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QApplication</span><span style="color:#02d045; ">&gt;</span> nestedlayout
+                            <span style="color:#b060b0; ">::</span>nestedlayout<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86; ">*</span>parent<span style="color:#d2cd86; ">)</span>                            <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span><span style="color:#d2cd86; ">(</span>parent<span style="color:#d2cd86; ">)</span>
+                            <span style="color:#b060b0; ">{</span> createWidgets
+                            <span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> placeWidgets
+
+                            <span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> makeConnexions
+
+                            <span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#b060b0; ">}</span> nestedlayout
+                            <span style="color:#b060b0; ">::</span><span style="color:#d2cd86; ">~</span>nestedlayout<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+                            <span style="color:#b060b0; ">{</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> nameLabel<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> nameEdit<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> backward<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> match<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> <span style="color:#e66170; font-weight:bold; ">search</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">delete</span> close<span style="color:#b060b0; ">;</span>
+                            <span style="color:#b060b0; ">}</span>
+                            <span style="color:#e66170; font-weight:bold; ">void</span> nestedlayout<span style="color:#b060b0; ">::</span>createWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>                            nameLabel <span style="color:#d2cd86; ">=</span><span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLabel</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span>
+                            <span style="color:#00c4c4; ">&lt;h2&gt; &lt;i&gt;name&lt;/i&gt; &lt;/h2&gt;</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> nameEdit <span style="color:#d2cd86; ">=</span>
+                            <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span> backward <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span>
+                            <span style="color:#e66170; font-weight:bold; ">QCheckBox</span>
+                            <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">search backward</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>                            match
+                            <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QCheckBox</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span>
+                            <span style="color:#00c4c4; ">match case</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">search</span> <span style="color:#d2cd86; ">=</span><span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QPushButton</span>
+                            <span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">search</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>                            close
+                            <span style="color:#d2cd86; ">=</span><span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QPushButton</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span>
+                            <span style="color:#00c4c4; ">close</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#b060b0; ">}</span>
+                            <span style="color:#e66170; font-weight:bold; ">void</span> nestedlayout<span style="color:#b060b0; ">::</span>makeConnexions<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+                            <span style="color:#b060b0; ">{</span>
+                            <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span>close<span style="color:#d2cd86; ">,</span> <span style="color:#d2cd86; ">&amp;</span><span style="color:#e66170; font-weight:bold; ">QPushButton</span>
+                            <span style="color:#b060b0; ">::</span>clicked<span style="color:#d2cd86; ">,</span>qApp<span style="color:#d2cd86; ">,</span> <span style="color:#d2cd86; ">&amp;</span><span style="color:#e66170; font-weight:bold; ">QApplication</span>
+                            <span style="color:#b060b0; ">::</span><span style="color:#e66170; font-weight:bold; ">exit</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">search</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SIGNAL</span>
+                            <span style="color:#d2cd86; ">(</span>clicked<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+                            <span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+                            <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SLOT</span><span style="color:#d2cd86; ">(</span>findClicked
+                            <span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span>nameEdit<span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SIGNAL</span>
+                            <span style="color:#d2cd86; ">(</span>textChanged<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">const</span> <span style="color:#e66170; font-weight:bold; ">QString</span> <span style="color:#d2cd86; ">&amp;</span>
+                            <span
+                                style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+                                <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SLOT</span><span style="color:#d2cd86; ">(</span>enableFindButton
+                                <span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">const</span> <span style="color:#e66170; font-weight:bold; ">QString</span> <span style="color:#d2cd86; ">&amp;</span>
+                                <span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                                <span style="color:#b060b0; ">}</span>
+
+                                <span style="color:#e66170; font-weight:bold; ">void</span> nestedlayout<span style="color:#b060b0; ">::</span>placeWidgets<span style="color:#d2cd86; ">(</span>
+                                <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+                                <span style="color:#e66170; font-weight:bold; ">QHBoxLayout</span> <span style="color:#d2cd86; ">*</span>topLeftLayout <span style="color:#d2cd86; ">=</span>
+                                <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QHBoxLayout</span><span style="color:#b060b0; ">;</span> topLeftLayout
+                                <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>nameEdit<span style="color:#d2cd86; ">)</span>
+                                <span style="color:#b060b0; ">;</span>
+
+                                <span style="color:#e66170; font-weight:bold; ">QVBoxLayout</span> <span style="color:#d2cd86; ">*</span>leftLayout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span>
+                                <span
+                                    style="color:#e66170; font-weight:bold; ">QVBoxLayout</span><span style="color:#b060b0; ">;</span> leftLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addLayout<span style="color:#d2cd86; ">(</span>topLeftLayout<span style="color:#d2cd86; ">)</span>
+                                    <span style="color:#b060b0; ">;</span> leftLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>match<span style="color:#d2cd86; ">)</span>
+                                    <span style="color:#b060b0; ">;</span> leftLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>backward
+                                    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+                                    <span style="color:#e66170; font-weight:bold; ">QVBoxLayout</span> <span style="color:#d2cd86; ">*</span>rightLayout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span>                                    <span style="color:#e66170; font-weight:bold; ">QVBoxLayout</span><span style="color:#b060b0; ">;</span> rightLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">search</span>
+                                    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> rightLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>close<span style="color:#d2cd86; ">)</span>
+                                    <span style="color:#b060b0; ">;</span> rightLayout
+                                    <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addStretch<span style="color:#d2cd86; ">(</span>
+                                    <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+
+                                    <span style="color:#e66170; font-weight:bold; ">QHBoxLayout</span> <span style="color:#d2cd86; ">*</span>mainLayout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span>
+                                    <span
+                                        style="color:#e66170; font-weight:bold; ">QHBoxLayout</span>
+                                        <span style="color:#b060b0; ">;</span> mainLayout
+                                        <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addLayout<span style="color:#d2cd86; ">(</span>leftLayout
+                                        <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> mainLayout
+                                        <span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addLayout<span style="color:#d2cd86; ">(</span>rightLayout
+                                        <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span> setLayout
+                                        <span style="color:#d2cd86; ">(</span>mainLayout<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                                        <span style="color:#b060b0; ">}</span>
+                                        <span style="color:#008073; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <span style="color:#008073; ">#</span><span style="color:#008073; ">endif</span>
+
+                                        </pre>
+
+
+
+
+
+
+
+
+
+
+
+                                        <p>It will display the following form:
+                                        </p>
+
+
+                                        <div class="center">
+                                            <img src="./image/Nested Layout.PNG" />
+                                            <div class="figcaption">
+                                                Nested Layout output.
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <p>In the
+                                                <a href="https://github.com/amalfati/Nested-layout.git"><strong>nestedlayout</strong></a> you will find the zip of this exercise.
+
+                                        </blockquote>
+
+                                        </p>
+
+
+
+
+
+
+
+
+
+
+                                        <h1 id="bug-report-form"><u>Report Form</u> </h1>
+
+                                        <p>In this example we used
+                                            <code class="language-plaintext highlighter-black">QFormLayout</code>to manages forms of input widgets and their associated labels,the
+                                            <code class="language-plaintext highlighter-black">QComboBox</code> widget is a combined button and popup list ,and The
+                                            <code class="language-plaintext highlighter-black">QDialogButtonBox</code> class is a widget that presents buttons in a layout that is appropriate to the current widget style.
+                                            </a>
+                                        </p>
+
+
+
+
+
+
+
+
+
+                                        <p>
+                                            <code class="language-plaintext highlighter-black">reportform.h</code> with the following code:
+                                        </p>
+
+
+
+                                        <pre style="color:#d1d1d1;background:#000000;">
+                    <span style="color:#008073; ">#</span><span style="color:#008073; ">ifndef</span><span style="color:#008073; "> REPORTFORM_H</span>
+                    <span style="color:#008073; ">#</span><span style="color:#008073; ">define</span><span style="color:#008073; "> REPORTFORM_H</span>
+                        
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QWidget</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QLineEdit</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QFormLayout</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QTextEdit</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QComboBox</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QDialogButtonBox</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QPushButton</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">include</span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QLabel</span><span style="color:#02d045; ">&gt;</span>
+                        <span style="color:#e66170; font-weight:bold; ">class</span> reportform <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">public</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span>
+                        <span style="color:#b060b0; ">{</span>
+                            <span style="color:#008073; ">Q_OBJECT</span>
+                        <span style="color:#e66170; font-weight:bold; ">public</span><span style="color:#e34adc; ">:</span>
+                            <span style="color:#e66170; font-weight:bold; ">explicit</span> reportform<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86; ">*</span>parent <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">nullptr</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                        
+                        <span style="color:#e66170; font-weight:bold; ">protected</span><span style="color:#e34adc; ">:</span>
+                            <span style="color:#e66170; font-weight:bold; ">void</span> createwidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">void</span> placewidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">void</span> makeconnexion<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                        <span style="color:#e66170; font-weight:bold; ">protected</span><span style="color:#e34adc; ">:</span>
+                            <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>name<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>company<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>phone<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>email<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QLineEdit</span> <span style="color:#d2cd86; ">*</span>problem<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QTextEdit</span> <span style="color:#d2cd86; ">*</span>summary<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QComboBox</span> <span style="color:#d2cd86; ">*</span>reproducibility<span style="color:#b060b0; ">;</span>
+                            <span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span> <span style="color:#d2cd86; ">*</span>buttonBox<span style="color:#b060b0; ">;</span>
+                        <span style="color:#b060b0; ">}</span><span style="color:#b060b0; ">;</span>
+                        <span style="color:#008073; ">#</span><span style="color:#008073; ">endif</span><span style="color:#008073; "> </span><span style="color:#9999a9; ">// REPORTFORM_H</span>
+                        </pre>
+
+
+
+                                        <p>
+                                            <code class="language-plaintext highlighter-black">reportform.cpp</code> with the following code:
+                                        </p>
+
+
+
+
+
+
+                                        <pre style="color:#d1d1d1;background:#000000;">
+            <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">"</span><span style="color:#40015a; ">reportform.h</span><span style="color:#02d045; ">"</span>
+
+            reportform<span style="color:#b060b0; ">::</span>reportform<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86; ">*</span>parent<span style="color:#d2cd86; ">)</span> <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span><span style="color:#d2cd86; ">(</span>parent<span style="color:#d2cd86; ">)</span>
+            <span style="color:#b060b0; ">{</span>
+              createwidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              placewidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              makeconnexion<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+             <span style="color:#b060b0; ">}</span>
+             <span style="color:#e66170; font-weight:bold; ">void</span> reportform<span style="color:#b060b0; ">::</span>createwidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+                     name <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span>
+                     company <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span>
+                     phone <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span>
+                     email <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span>
+                     problem <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLineEdit</span><span style="color:#b060b0; ">;</span>
+                     summary <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QTextEdit</span><span style="color:#b060b0; ">;</span>
+                     reproducibility <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QComboBox</span><span style="color:#b060b0; ">;</span>
+                            
+              <span style="color:#b060b0; ">}</span>
+              <span style="color:#e66170; font-weight:bold; ">void</span> reportform<span style="color:#b060b0; ">::</span>placewidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+              <span style="color:#e66170; font-weight:bold; ">QFormLayout</span> <span style="color:#d2cd86; ">*</span>layout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QFormLayout</span><span style="color:#b060b0; ">;</span>
+              <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>setLayout<span style="color:#d2cd86; ">(</span>layout<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>name<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;Name:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>name<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>company<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;Company:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>company<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>phone<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;phone:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>phone<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>email<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;email:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>email<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>problem<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;problem:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>problem<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>summary<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;summary:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>summary<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            
+                            
+              reproducibility <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QComboBox</span><span style="color:#b060b0; ">;</span>
+              reproducibility<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addItem<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Always</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              reproducibility<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addItem<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">usually</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              reproducibility<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addItem<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Rarely</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span>reproducibility<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addRow<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">&amp;reproducibility:</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>reproducibility<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            
+              buttonBox <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span><span style="color:#b060b0; ">;</span>
+              buttonBox<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addButton<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Submit Bug Report</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+                                                     <span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span><span style="color:#b060b0; ">::</span>AcceptRole<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              buttonBox<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addButton<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">tr</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Don't Submit</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+                                                     <span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span><span style="color:#b060b0; ">::</span>RejectRole<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              buttonBox<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addButton<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span><span style="color:#b060b0; ">::</span>Reset<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+                            
+              layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>buttonBox<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              setLayout<span style="color:#d2cd86; ">(</span>layout<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              <span style="color:#b060b0; ">}</span>
+              <span style="color:#e66170; font-weight:bold; ">void</span> reportform<span style="color:#b060b0; ">::</span>makeconnexion<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">{</span>
+              <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span>buttonBox<span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SIGNAL</span><span style="color:#d2cd86; ">(</span>accepted<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+              <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SLOT</span><span style="color:#d2cd86; ">(</span>accept<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span>buttonBox<span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SIGNAL</span><span style="color:#d2cd86; ">(</span>rejected<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+              <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SLOT</span><span style="color:#d2cd86; ">(</span>reject<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              <span style="color:#e66170; font-weight:bold; ">connect</span><span style="color:#d2cd86; ">(</span>buttonBox<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>button<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QDialogButtonBox</span><span style="color:#b060b0; ">::</span>Reset<span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span>
+              <span style="color:#e66170; font-weight:bold; ">SIGNAL</span><span style="color:#d2cd86; ">(</span>clicked<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">SLOT</span><span style="color:#d2cd86; ">(</span>reset<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+              <span style="color:#b060b0; ">}</span>
+                            </pre>
+
+
+
+                                        <p>It will display the following form:
+                                        </p>
+
+
+                                        <div class="center">
+                                            <img src="./image/bug.PNG" />
+                                            <div class="figcaption">
+                                                Bug Report form output
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        <blockquote>
+                                            <p>In the
+                                                <a href="https://github.com/amalfati/ReportForm.git"><strong>ReportForm</strong></a>, you will find the zip of this exercise.
+                                            </p>
+
+                                        </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+                                        <h1 id="grid-layout"><u>Grid Layout</u></h1>
+
+                                        <p>The example shows how to use
+                                            <code class="language-plaintext highlighter-black">QGridLayout</code> to place child widgets in a grid.
+
+
+                                        </p>
+
+
+                                        <p>
+                                            <code class="language-plaintext highlighter-black">calculator.h</code> with the following code:
+                                        </p>
+
+
+
+
+
+
+                                        <pre style="color:#d1d1d1;background:#000000;">
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">ifndef</span><span style="color:#008073; "> CALCULATOR_H</span>
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">define</span><span style="color:#008073; "> CALCULATOR_H</span>
+                        
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QMainWindow</span><span style="color:#02d045; ">&gt;</span>
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QGridLayout</span><span style="color:#02d045; ">&gt;</span>
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QVector</span><span style="color:#02d045; ">&gt;</span>
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QPushButton</span><span style="color:#02d045; ">&gt;</span>
+        <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QLCDNumber</span><span style="color:#02d045; ">&gt;</span>
+                        
+         <span style="color:#e66170; font-weight:bold; ">class</span> Calculator <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">public</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span>
+         <span style="color:#b060b0; ">{</span>
+         <span style="color:#008073; ">Q_OBJECT</span>
+         <span style="color:#e66170; font-weight:bold; ">public</span><span style="color:#e34adc; ">:</span>
+           Calculator<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86; ">*</span>parent <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">nullptr</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+         <span style="color:#d2cd86; ">~</span>Calculator<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">protected</span><span style="color:#e34adc; ">:</span>
+         <span style="color:#e66170; font-weight:bold; ">void</span> createWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">void</span> placeWidget<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">private</span><span style="color:#e34adc; ">:</span>
+         <span style="color:#e66170; font-weight:bold; ">QGridLayout</span> <span style="color:#d2cd86; ">*</span>buttonsLayout<span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">QVBoxLayout</span> <span style="color:#d2cd86; ">*</span>layout<span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">QVector</span><span style="color:#b060b0; ">&lt;</span><span style="color:#e66170; font-weight:bold; ">QPushButton</span><span style="color:#d2cd86; ">*</span><span style="color:#b060b0; ">&gt;</span> digits<span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">QPushButton</span> <span style="color:#d2cd86; ">*</span>enter<span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">QVector</span><span style="color:#b060b0; ">&lt;</span><span style="color:#e66170; font-weight:bold; ">QPushButton</span><span style="color:#d2cd86; ">*</span><span style="color:#b060b0; ">&gt;</span> operations<span style="color:#b060b0; ">;</span>
+         <span style="color:#e66170; font-weight:bold; ">QLCDNumber</span> <span style="color:#d2cd86; ">*</span>display<span style="color:#b060b0; ">;</span>
+         <span style="color:#b060b0; ">}</span><span style="color:#b060b0; ">;</span>
+         <span style="color:#008073; ">#</span><span style="color:#008073; ">endif</span>
+                </pre>
+
+
+
+
+
+
+
+
+                                        <p>
+                                            <code class="language-plaintext highlighter-black">calculator.cpp</code> with the following code:
+                                        </p>
+
+
+
+
+                                        <pre style="color:#d1d1d1;background:#000000;">
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">"</span><span style="color:#40015a; ">calculator.h</span><span style="color:#02d045; ">"</span>
+    <span style="color:#008073; ">#</span><span style="color:#008073; ">include </span><span style="color:#02d045; ">&lt;</span><span style="color:#40015a; ">QApplication</span><span style="color:#02d045; ">&gt;</span>
+    
+    Calculator<span style="color:#b060b0; ">::</span>Calculator<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QWidget</span> <span style="color:#d2cd86; ">*</span>parent<span style="color:#d2cd86; ">)</span>
+        <span style="color:#b060b0; ">:</span> <span style="color:#e66170; font-weight:bold; ">QWidget</span><span style="color:#d2cd86; ">(</span>parent<span style="color:#d2cd86; ">)</span>
+    <span style="color:#b060b0; ">{</span>
+        createWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        placeWidget<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#b060b0; ">}</span>
+    Calculator<span style="color:#b060b0; ">::</span><span style="color:#d2cd86; ">~</span>Calculator<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#b060b0; ">{</span>
+        <span style="color:#e66170; font-weight:bold; ">delete</span> display<span style="color:#b060b0; ">;</span>
+        <span style="color:#e66170; font-weight:bold; ">delete</span> layout<span style="color:#b060b0; ">;</span>
+        <span style="color:#e66170; font-weight:bold; ">delete</span> buttonsLayout<span style="color:#b060b0; ">;</span>
+    <span style="color:#b060b0; ">}</span>
+    <span style="color:#e66170; font-weight:bold; ">void</span> Calculator<span style="color:#b060b0; ">::</span>createWidgets<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#b060b0; ">{</span>
+        layout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QVBoxLayout</span><span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>setSpacing<span style="color:#d2cd86; ">(</span><span style="color:#008c00; ">2</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        buttonsLayout <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QGridLayout</span><span style="color:#b060b0; ">;</span>
+    
+        <span style="color:#e66170; font-weight:bold; ">for</span><span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">int</span> i<span style="color:#d2cd86; ">=</span><span style="color:#008c00; ">0</span><span style="color:#b060b0; ">;</span> i <span style="color:#d2cd86; ">&lt;</span> <span style="color:#008c00; ">10</span><span style="color:#b060b0; ">;</span> i<span style="color:#d2cd86; ">+</span><span style="color:#d2cd86; ">+</span><span style="color:#d2cd86; ">)</span>
+        <span style="color:#b060b0; ">{</span>
+            digits<span style="color:#d2cd86; ">.</span>push_back<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QPushButton</span><span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QString</span><span style="color:#b060b0; ">::</span>number<span style="color:#d2cd86; ">(</span>i<span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+            digits<span style="color:#d2cd86; ">.</span>back<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>setSizePolicy<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QSizePolicy</span><span style="color:#b060b0; ">::</span>Expanding<span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">QSizePolicy</span><span style="color:#b060b0; ">::</span>Fixed<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+            digits<span style="color:#d2cd86; ">.</span>back<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>resize<span style="color:#d2cd86; ">(</span>sizeHint<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">.</span>width<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span> sizeHint<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">.</span>height<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        <span style="color:#b060b0; ">}</span>
+    
+        enter <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QPushButton</span><span style="color:#d2cd86; ">(</span><span style="color:#02d045; ">"</span><span style="color:#00c4c4; ">Enter</span><span style="color:#02d045; ">"</span><span style="color:#d2cd86; ">,</span><span style="color:#e66170; font-weight:bold; ">this</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        enter<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>setSizePolicy<span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">QSizePolicy</span><span style="color:#b060b0; ">::</span>Expanding<span style="color:#d2cd86; ">,</span> <span style="color:#e66170; font-weight:bold; ">QSizePolicy</span><span style="color:#b060b0; ">::</span>Fixed<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        enter<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>resize<span style="color:#d2cd86; ">(</span>sizeHint<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">.</span>width<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">,</span> sizeHint<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">.</span>height<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    
+         display <span style="color:#d2cd86; ">=</span> <span style="color:#e66170; font-weight:bold; ">new</span> <span style="color:#e66170; font-weight:bold; ">QLCDNumber</span><span style="color:#d2cd86; ">(</span><span style="color:#008c00; ">6</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        display<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>setMinimumHeight<span style="color:#d2cd86; ">(</span><span style="color:#008c00; ">80</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#b060b0; ">}</span>
+    <span style="color:#e66170; font-weight:bold; ">void</span> Calculator<span style="color:#b060b0; ">::</span>placeWidget<span style="color:#d2cd86; ">(</span><span style="color:#d2cd86; ">)</span>
+    <span style="color:#b060b0; ">{</span>
+        layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>display<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        layout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addLayout<span style="color:#d2cd86; ">(</span>buttonsLayout<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    
+        <span style="color:#e66170; font-weight:bold; ">for</span><span style="color:#d2cd86; ">(</span><span style="color:#e66170; font-weight:bold; ">int</span> i<span style="color:#d2cd86; ">=</span><span style="color:#008c00; ">1</span><span style="color:#b060b0; ">;</span> i <span style="color:#d2cd86; ">&lt;</span><span style="color:#008c00; ">10</span><span style="color:#b060b0; ">;</span> <span style="color:#d2cd86; ">+</span><span style="color:#d2cd86; ">+</span>i<span style="color:#d2cd86; ">)</span>
+        buttonsLayout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>digits<span style="color:#d2cd86; ">[</span>i<span style="color:#d2cd86; ">]</span><span style="color:#d2cd86; ">,</span> <span style="color:#d2cd86; ">(</span><span style="color:#008c00; ">9</span><span style="color:#d2cd86; ">-</span>i<span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">/</span><span style="color:#008c00; ">3</span>  <span style="color:#d2cd86; ">,</span> <span style="color:#d2cd86; ">(</span>i<span style="color:#d2cd86; ">-</span><span style="color:#008c00; ">1</span><span style="color:#d2cd86; ">)</span><span style="color:#d2cd86; ">%</span><span style="color:#008c00; ">3</span> <span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        buttonsLayout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>digits<span style="color:#d2cd86; ">[</span><span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">]</span><span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">3</span><span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">0</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+        buttonsLayout<span style="color:#d2cd86; ">-</span><span style="color:#d2cd86; ">&gt;</span>addWidget<span style="color:#d2cd86; ">(</span>enter<span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">3</span><span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">1</span><span style="color:#d2cd86; ">,</span> <span style="color:#008c00; ">1</span><span style="color:#d2cd86; ">,</span><span style="color:#008c00; ">2</span><span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    
+        setLayout<span style="color:#d2cd86; ">(</span>layout<span style="color:#d2cd86; ">)</span><span style="color:#b060b0; ">;</span>
+    <span style="color:#b060b0; ">}</span>
+    </pre>
+
+
+
+
+
+
+
+                                        <p>It will display the following form:
+                                        </p>
+
+
+
+                                        <div class="center">
+                                            <img src="./image/calculator.PNG" />
+                                            <div class="figcaption">
+                                                Grid Layout output.
+                                            </div>
+                                        </div>
+
+                                        <blockquote>
+                                            <p>In the
+                                                <a href="https://github.com/amalfati/calculator.git"><strong>calculator</strong></a>, you will find the zip of this exercise.
+                                            </p>
+
+                                        </blockquote>
+
+
+                </article>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="post">
+
+                <div>
+                    <h1 id="conclusion">
+                        <u>Conclusion</u></h1>
+
+                    <p>
+                        <div class="center">
+                            In this practical course we improved an important part in graphical interfaces which is the part of creation of QLabel ,QQHBoxLayout QVBoxLayout , QFormLayoutto , QComboBox , QDialogButtonBox and QGridLayout . This practical course has been interesting
+                            and beneficial for us in several ways and has allowed to : Improve our skills by improving our knowledge of programming Widget Layout in c++ . and to improve our report we tried to do it with HTML and github.
+                        </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+
+        <div class="wrapper">
+
+
+
+            <div class="footer-col-wrapper">
+                <div class="footer-col footer-col-1">
+                    <ul class="contact-list">
+                        <li class="p-name">Amal Lamini </li>
+                        <li><a class="u-email" href="lamini.amal2001@gmail.com">lamini.amal2001@gmail.com</a></li>
+                    </ul>
+                    <ul class="contact-list">
+                        <li class="p-name">Fatima Ezzahra Seffari</li>
+                        <li><a class="u-email" href="fatimaezzahraseffari3@gmail.com">fatimaezzahraseffari3@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-col-2">
+                    <ul class="social-media-list">
+                        <li><a href="https://github.com/amalfati" target="_blank"><i class="fab fa-github"></i> <span class="username">https://github.com/amalfati</span></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
